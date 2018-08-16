@@ -49,7 +49,7 @@ output to stdout.
 
 ## update virus update
 
-refleshclam command run every 12 hours.
+refleshclam command run at 0:00 UTC and 12:00 UTC .
 clamd check update every 4 hours.
 
 If you want to change update term, change crontab and clamd.conf.

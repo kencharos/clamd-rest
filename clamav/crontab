@@ -1,1 +1,1 @@
-* */12 * * * /usr/bin/freshclam
+00  0,12 * * * /usr/bin/freshclam
