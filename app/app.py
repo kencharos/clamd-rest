@@ -29,7 +29,6 @@ def verify_password(username, password):
     else:
         return False
 
-
 @app.route("/", methods=["GET"])
 def healthcheck():
 

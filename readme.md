@@ -43,3 +43,13 @@ I recomend to mount `/var/lib/clamav` directory as volume because ClamAV pattern
 + AUTH_USER - user name for basic auth
 + AUTH_PASSWORD - user password for basic auth
 
+## Log
+
+output to stdout.
+
+## update virus update
+
+refleshclam command run every 12 hours.
+clamd check update every 4 hours.
+
+If you want to change update term, change crontab and clamd.conf.

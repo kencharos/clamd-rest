@@ -1,1 +1,1 @@
-* */8 * * * /usr/bin/freshclam
+* */12 * * * /usr/bin/freshclam

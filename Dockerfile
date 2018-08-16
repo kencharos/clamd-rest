@@ -1,7 +1,7 @@
 FROM python:3.5-alpine
 MAINTAINER Kentaro.Maeda 
 
-RUN apk add --no-cache --update tzdata rsyslog clamav supervisor && \
+RUN apk add --no-cache --update clamav supervisor && \
    (rm "/tmp/"* 2>/dev/null || true) && (rm -rf /var/cache/apk/* 2>/dev/null || true)
 
 
@@ -25,6 +25,8 @@ ADD app/app.py /app
 ADD app/runapp.sh /app
 
 ENV PORT 8080
+ENV AUTH_USER user
+ENV AUTH_PASSWORD password
 EXPOSE $PORT
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
